@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button } from '../../components/common/Button'
+import AddLiquidity from '../../components/AddLiquidity'
 
 function Hero() {
   return (
@@ -36,6 +37,7 @@ function Hero() {
             Learn More
           </Button>
         </div>
+        <AddLiquidity/>
       </div>
     </div>
   )
