@@ -6,7 +6,7 @@ function NavBar() {
     <nav className='flex justify-between items-center p-5'>
       <img src='/assets/logo.png' alt='' />
 
-      <div className='flex gap-5 rounded-full    bg-[#FFFFFF08]  text-white text-3xl font-semibold border-gray-200  font-serif border p-4'>
+      <div className='flex gap-5 rounded-full    bg-[#FFFFFF08]  text-white text-xl font-semibold border-gray-600  font-serif border-[1px] p-4 '>
         <span>Blog</span>
         <span>Changelog</span>
         <span>Documentation</span>
