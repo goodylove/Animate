@@ -1,10 +1,18 @@
 import React from 'react'
 import { Button } from '../../components/common/Button'
 import AddLiquidity from '../../components/AddLiquidity'
+import { motion } from "framer-motion";
+
+import { container ,poppin,textVariant} from '../../util/motion'
 
 function Hero() {
   return (
-    <div className='relative'>
+    < motion.div
+      variants={container}
+      initial="hidden"
+      whileInView="show"
+      
+      className='relative'>
       <div
         style={{
           background: `url("/assets/hero.png")`,
@@ -20,24 +28,43 @@ function Hero() {
           flexDirection: 'column',
         }}
       >
-        <h1 className=' font-extrabold text-white text-6xl  text-center   leading-[1.5] my-4'>
+        <motion.h1
+         
+          initial={{ opacity: 0, y: -50, }}
+          transition={{type:"tween",duration:1}}
+          // animate={{ opacity: 1, y: 0 }}
+            whileInView={{opacity:1,y: 0}}
+        
+          className=' font-extrabold text-white text-6xl  text-center   leading-[1.5] my-4'>
           Oracle Free Perpetual
           <br /> Volatility Trading
-        </h1>
-        <p className='text-white text-center my-6 text-lg'>
+        </motion.h1>
+        <motion.p
+           initial={{ opacity: 0, x: -50, }}
+          transition={{type:"tween",duration:1}}
+          // animate={{opacity:1, x:0}}
+            whileInView={{opacity:1,x: 0}}
+        
+          className='text-white text-center my-6 text-lg'>
           A novel primitive for scaling DeFi liquidity through <br />
           permissionless risk markets
-        </p>
+        </motion.p>
 
       <div className='bg-[#FF630B]  h-[400px] w-[400px]  absolute z-10 right-2 bottom-0 rounded-full blur-[150px]'></div>
-        <div className='flex gap-5 my-5'>
-          <Button className='p-3 rounded-md bg-[#b44201]  shadow-lg  text-white  font-semibold text-2xl slide '>
+        <motion.div
+           initial={{ opacity: 0, y: -50, }}
+          transition={{type:"tween",duration:5,delay:0.2}}
+          // animate={{ opacity: 1, y: 0 }}
+          whileInView={{opacity:1,y: 0}}
+        
+          className='flex gap-5 my-5'>
+          <Button className='p-3 rounded-md bg-[#b44201]  shadow-lg  text-white  font-semibold text-lg slide '>
             Launch App
           </Button>
-          <Button className='p-3 rounded-md border-white border   text-white  font-semibold text-2xl slide '>
+          <Button className='p-3 rounded-md border-white border   text-white  font-semibold text-lg slide '>
             Learn More
           </Button>
-        </div>
+        </motion.div>
         
          
 
@@ -56,7 +83,14 @@ function Hero() {
         </div>
        </div>
           </div>
-           <div className='card max-w-[600px] w-full rounded-xl '>
+          <motion.div
+            initial={{ opacity: 0, x: 100, }}
+          transition={{type:"tween",duration:5,ease: "linear"}}
+       
+          whileInView={{opacity:1,x: 0}}
+            
+            
+            className='card max-w-[600px] w-full rounded-xl '>
            <AddLiquidity />
              <span class="span top"></span>
                 <span class="span right"></span>
@@ -65,14 +99,14 @@ function Hero() {
 
 
           
-        </div>
+        </motion.div>
 
         
         </div>
         
        
       </div>
-    </div>
+    </motion.div>
   )
 }
 
