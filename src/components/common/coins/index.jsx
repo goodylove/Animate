@@ -4,7 +4,7 @@ function CoinsComponent() {
   return (
       <div className=' '>
           <div className='flex items-center justify-between px-3 bg-[#161926] py-2 rounded-md opacity-[0.2px]'>
-          <div className='flex items-center  gap-2  bg-[#2A2D3C] rounded-md p-3  justify-center w-32'>
+          <div className='flex items-center  gap-3  bg-[#2A2D3C] rounded-md p-2  justify-center '>
                   <img src="/assets/icons/eth.svg" />
                   <span className='text-white font-extrabold '>ETH</span>
           </div>

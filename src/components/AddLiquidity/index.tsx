@@ -7,7 +7,7 @@ import { Button } from '../common/Button';
 
 function AddLiquidity() {
   return (
-      <div className=' bg-[#131625]   p-4  rounded-lg '>
+      <div className=' bg-[#131625]   p-4  rounded-xl '>
           <div className='flex items-center gap-3 py-2 my-3 '>
               <span className='font-bold text-xl text-white '>Add Liquidity</span>
               <IoIosInformationCircleOutline className='text-gray-500' size={25}/>
