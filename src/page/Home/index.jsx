@@ -1,23 +1,24 @@
 import React from 'react'
-import NavBar from '../../components/navBar'
 import Hero from '../../Layouts/Hero'
 import LiquidityProvision from '../../Layouts/LiquidityProvision'
 import LongVolitality from '../../Layouts/LongVoility'
 import EarnProviding from '../../Layouts/EarnProviding'
 import Explore from '../../Layouts/Discover'
-import Footer from '../../navigation/Footer'
+import { LayoutWrapper } from '../../Layouts'
 
 function Home() {
   return (
-    <>
-      <NavBar />
+    <div className=" w-full max-w-[700px] sm:overflow-x-visible overflow-x-hidden flex items-center ">
+    <LayoutWrapper>
+     
       <Hero />
       <LiquidityProvision />
       <LongVolitality />
       <EarnProviding />
       <Explore />
-      <Footer/>
-    </>
+     
+    </LayoutWrapper>
+    </div>
   )
 }
 

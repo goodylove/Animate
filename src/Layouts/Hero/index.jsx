@@ -50,7 +50,7 @@ function Hero() {
           permissionless risk markets
         </motion.p>
 
-      <div className='bg-[#FF630B]  h-[400px] w-[400px]  absolute z-10 right-2 bottom-24 rounded-full blur-[150px]'></div>
+      <div className='bg-[#FF630B]  md:h-[400px] md:w-[400px]  absolute z-10 md:right-2 bottom-24 rounded-full blur-[150px]'></div>
         <motion.div
            initial={{ opacity: 0, y: -50, }}
           transition={{type:"tween",duration:5,delay:0.2}}
@@ -90,7 +90,7 @@ function Hero() {
           whileInView={{opacity:1,x: 0}}
             
             
-            className='card max-w-[600px] w-full rounded-xl my-6 '>
+            className='card max-w-[500px] w-full rounded-xl my-6 mx-3 '>
            <AddLiquidity />
              <span class="span top"></span>
                 <span class="span right"></span>
