@@ -8,7 +8,7 @@ import { LayoutWrapper } from '../../Layouts'
 
 function Home() {
   return (
-    <div className=" w-full max-w-[700px] sm:overflow-x-visible overflow-x-hidden flex items-center ">
+    <div className=" w-full  sm:overflow-x-visible overflow-x-hidden flex items-center justify-center ">
     <LayoutWrapper>
      
       <Hero />

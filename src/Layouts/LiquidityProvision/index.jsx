@@ -6,7 +6,7 @@ import { textContainer, textVariant2 } from '../../util/motion';
 function LiquidityProvision() {
   const  text = "Liquidity Provisioning"
   return (
-      <div className=' flex  items-center  justify-around flex-col md:flex-row  py-10 px-3 '>
+      <div className=' flex  items-center  justify-between   w-full  flex-col md:flex-row  py-10 px-3 gap-9 '>
       <motion.div
         initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}

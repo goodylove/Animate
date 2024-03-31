@@ -12,7 +12,7 @@ function Hero() {
       initial="hidden"
       whileInView="show"
       
-      className='relative overflow-hidden'>
+      className='relative '>
       <div
         style={{
           background: `url("/assets/hero.png")`,
