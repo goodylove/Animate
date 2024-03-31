@@ -12,7 +12,7 @@ function Hero() {
       initial="hidden"
       whileInView="show"
       
-      className='relative'>
+      className='relative overflow-hidden'>
       <div
         style={{
           background: `url("/assets/hero.png")`,
@@ -50,7 +50,7 @@ function Hero() {
           permissionless risk markets
         </motion.p>
 
-      <div className='bg-[#FF630B]  h-[400px] w-[400px]  absolute z-10 right-2 bottom-0 rounded-full blur-[150px]'></div>
+      <div className='bg-[#FF630B]  h-[400px] w-[400px]  absolute z-10 right-2 bottom-24 rounded-full blur-[150px]'></div>
         <motion.div
            initial={{ opacity: 0, y: -50, }}
           transition={{type:"tween",duration:5,delay:0.2}}
@@ -85,12 +85,12 @@ function Hero() {
           </div>
           <motion.div
             initial={{ opacity: 0, x: 100, }}
-          transition={{type:"tween",duration:5,ease: "linear"}}
+          transition={{type:"tween",duration:5,ease: "easeOut"}}
        
           whileInView={{opacity:1,x: 0}}
             
             
-            className='card max-w-[600px] w-full rounded-xl '>
+            className='card max-w-[600px] w-full rounded-xl my-6 '>
            <AddLiquidity />
              <span class="span top"></span>
                 <span class="span right"></span>
