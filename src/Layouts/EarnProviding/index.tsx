@@ -6,7 +6,7 @@ import { textContainer, textVariant2 } from '../../util/motion';
 function EarnProviding() {
   const  text = "Multiple AMMs"
   return (
-      <div className=' flex  items-center  justify-around  py-10 '>
+      <div className=' flex  items-center  justify-around  flex-col md:flex-row py-10 px-3 '>
       <motion.div
         initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -51,8 +51,8 @@ function EarnProviding() {
         
           <motion.div className="relative mt-30  flex items-center ">
               
-              <img src="/assets/earn.png" width={500} height={500}/>
-              <img src="/assets/erann.png" width={400} height={400}  className='absolute left-10'/>
+              <img src="/assets/earn.png" width={400} height={400}/>
+              <img src="/assets/erann.png" width={300} height={300}  className='absolute left-10 erann'/>
         </motion.div>
     </div>
     

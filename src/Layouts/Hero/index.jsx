@@ -35,7 +35,7 @@ function Hero() {
           // animate={{ opacity: 1, y: 0 }}
             whileInView={{opacity:1,y: 0}}
         
-          className=' font-extrabold text-white text-6xl  text-center   leading-[1.5] my-4'>
+          className=' font-extrabold text-white md:text-6xl  text-3xl  text-center   leading-[1.5] my-4'>
           Oracle Free Perpetual
           <br /> Volatility Trading
         </motion.h1>

@@ -6,7 +6,7 @@ import { textContainer, textVariant2 } from '../../util/motion';
 function LongVolitality() {
   const  text = "Perpetuals"
   return (
-      <div className=' flex  items-center  justify-around  py-10 overflow-hidden  '>
+      <div className=' flex  items-center  justify-around  py-10  flex-col md:flex-row  px-3 '>
           
 
       <motion.div
