@@ -6,13 +6,13 @@ import { textContainer, textVariant2 } from '../../util/motion';
 function EarnProviding() {
   const  text = "Multiple AMMs"
   return (
-      <div className=' flex  items-center  gap-8 justify-around  flex-col md:flex-row py-10 px-3 '>
+      <div className=' flex  items-center w-full  justify-around  flex-col md:flex-row py-10 md:px-0 px-3 '>
       <motion.div
         initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{repeatType:"mirror",type:"tween",duration:2,ease:"easeOut"}}
         
-        className='flex flex-col gap-5 items-start'>
+        className='flex flex-col gap-5 items-start my-7'>
         <motion.p
           
            variants={textContainer}
@@ -36,7 +36,7 @@ function EarnProviding() {
         </motion.p>
 
 
-        <h1 className='text-white text-5xl leading-[1.3] font-black'>Earn by Providing
+        <h1 className='text-white md:text-5xl text-4xl leading-[1.3] font-black'>Earn by Providing
  <br/>
           Liquidity</h1>
         <p className='text-white'>Earn a higher yield by providing liquidity through GammaSwap.<br/>

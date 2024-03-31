@@ -4,7 +4,7 @@ import Footer from '../navigation/Footer'
 
 export const  LayoutWrapper =(props)=> {
   return (
-      <div>
+      <div className='w-11/12'>
           <NavBar />
           {props.children}
           <Footer/>

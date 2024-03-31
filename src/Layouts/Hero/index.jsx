@@ -69,7 +69,7 @@ function Hero() {
          
 
         <div className='flex items-end w-full justify-center gap-3 relative'>
-          <div className='absolute left-[16rem] flex-col gap-5 flex  bottom-5 starshere justify-evenly  '>
+          <div className='absolute left-[8rem] flex-col gap-5 flex  bottom-5 starshere justify-evenly  '>
                <div className='-rotate-[30deg] my-5'>
            <div className='flex items-center gap-3 p-2 rounded bg-[#2C1310] text-[#FF630B]'>
           <img src='/assets/icons/Star 1.png' />

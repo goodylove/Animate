@@ -6,7 +6,7 @@ import { textContainer, textVariant2 } from '../../util/motion';
 function LongVolitality() {
   const  text = "Perpetuals"
   return (
-      <div className=' flex  items-center  justify-between  py-10  flex-col md:flex-row  px-3 '>
+      <div className=' flex  items-center  justify-around  py-10   flex-col-reverse  my-4  md:flex-row  md:px-0 px-3  w-full '>
           
 
       <motion.div
@@ -80,7 +80,7 @@ function LongVolitality() {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{repeatType:"mirror",type:"tween",duration:2,ease:"easeOut"}}
         
-        className='flex flex-col gap-5 items-start'>
+        className='flex flex-col gap-5 items-start my-6'>
         <motion.p
           
            variants={textContainer}
